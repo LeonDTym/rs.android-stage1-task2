@@ -9,7 +9,9 @@
 
 Или открыть класс с тестом и нажать на зелёный треугольник рядом с объявлением класса. Если все тесты пройдены успешно :smiley_cat:, они отмечаются зеленым значком :heavy_check_mark:, иначе :scream_cat: - красным :heavy_exclamation_mark:
 
-:point_up: У многих после клонирования Task 1 студия не показывала значек запуска теста перед именем класса с тестом. Есть два совета: 1) используйте стабильную версию Android Studio, например 3.6.1, 2) Клонируйте проект через консоль и затем открывайте в студии.
+:point_up: У многих после клонирования Task 1 студия не показывала значек запуска теста перед именем класса с тестом. Есть два совета:
+- Используйте стабильную версию Android Studio, например 3.6.1 
+- Клонируйте проект через консоль и затем открывайте в студии.
 
 В любом случае, запуск через пункт Gradle в студии или через консоль будет работать. 
 
@@ -34,15 +36,17 @@ https://app.rs.school/
 
 - Входные данные: 18 3 2019
 - Выходная строка: 18 марта, понедельник
+</br></br>
 
 - Входные данные: 29 2 2017
 - Выходная строка: Такого дня не существует
+</br></br>
 
 
 **Input:** three values - day: String, month: String, year: String
 
 **Output:** text representation of Date - "$day $text_month, $text_day_of_the_week" or "Такого дня не существует" 
-
+</br></br>
 
 ### 2) Time Converter
 
@@ -55,7 +59,7 @@ At **minutes = 0**, use "o' clock". For **1 <= minutes <= 30**, use "past", and 
 **Input:** two values - hour: String, minute: String
 
 **Output:** text representation (String) of time according to need format (see above)
-
+</br></br>
 
 ### 3) Abbreviation
 
@@ -64,15 +68,14 @@ At **minutes = 0**, use "o' clock". For **1 <= minutes <= 30**, use "past", and 
 **Input:**
 
 **Output:**
-
+</br></br>
 
 ### 4) Pangram
 
-**Input:** String that might contain the following brackets: [], <>, ()
+**Input:** 
 
-**Output:** An Array of Strings. Each element of the array must contain
-substring between the open-close bracket.
-
+**Output:** 
+</br></br>
 
 ### 5) Blocks
 
@@ -80,7 +83,7 @@ substring between the open-close bracket.
 **Input:**
 
 **Output:** 
-
+</br></br>
 
 
 ### 6) Fibonacci
@@ -88,5 +91,5 @@ substring between the open-close bracket.
 **Input:**
 
 **Output:** 
-
+</br></br>
 :ok_hand:
