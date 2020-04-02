@@ -1,9 +1,9 @@
-package subtask2
+package subtask4
 
-class MiniMaxSum {
+class Pangram {
 
     // TODO: Complete the following function
-    fun getResult(input: IntArray): IntArray {
+    fun getResult(inputString: String): String {
         throw NotImplementedError("Not implemented")
     }
 }

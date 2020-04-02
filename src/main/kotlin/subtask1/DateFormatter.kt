@@ -1,9 +1,9 @@
 package subtask1
 
-class HappyArray {
+class DateFormatter {
 
     // TODO: Complete the following function
-    fun convertToHappy(sadArray: IntArray): IntArray {
+    fun toTextDay(day: String, month: String, year: String): IntArray {
         throw NotImplementedError("Not implemented")
     }
 }

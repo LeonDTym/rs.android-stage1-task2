@@ -1,9 +1,11 @@
 package subtask5
 
-class HighestPalindrome {
+import kotlin.reflect.KClass
+
+class Blocks {
 
     // TODO: Complete the following function
-    fun highestValuePalindrome(n: Int, k: Int, digitString: String): String {
+    fun getData(blockA: Array<Any>, blockB: KClass<*>): Any {
         throw NotImplementedError("Not implemented")
     }
 }

@@ -1,9 +1,9 @@
-package subtask4
+package subtask6
 
-class StringParser {
+class Fibonacci {
 
     // TODO: Complete the following function
-    fun getResult(inputString: String): Array<String> {
+    fun productFibonacciSequenceFor(n: Int): IntArray {
         throw NotImplementedError("Not implemented")
     }
 }
