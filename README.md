@@ -43,7 +43,7 @@ https://app.rs.school/
 </br></br>
 
 
-**Input:** three values - day: String, month: String, year: String
+**Input:** three parameters - day: String, month: String, year: String
 
 **Output:** text representation of Date - "$day $text_month, $text_day_of_the_week" or "Такого дня не существует" 
 </br></br>
@@ -56,18 +56,33 @@ Given the time in numerals we may convert it into words, as shown below:
 
 At **minutes = 0**, use "o' clock". For **1 <= minutes <= 30**, use "past", and for **30 > minutes** use "to". Note the space between the apostrophe and clock in "o' clock". For **15 minutes** use "quarter past", for **45 minutes** - "quarter to". Complete function which returns the time in words for the input given in the format described.
 
-**Input:** two values - hour: String, minute: String
+**Input:** two parameters - hour: String, minute: String
 
 **Output:** text representation (String) of time according to need format (see above)
 </br></br>
 
 ### 3) Abbreviation
 
+You can perform the following operations on the string **a** 
+
+1. Capitalize zero or more of **a**'s lowercase letters.
+2. Delete all of the remaining lowercase letters in **a**.
+
+Given two strings, **a** and **b**, determine if it's possible to make **a** equal to **b** as described. If so, print *YES* on a new line. Otherwise, print *NO*.
+
+For example, given **a = AbcDE** and **b = ABDE**, in **a** we can convert **b** and delete **c** to match **b**. If **a = AbcDE** and **b = AFDE**, matching is not possible because letters may only be capitalized or discarded, not changed.
+
+**Function Description**
+
+Complete the function *abbreviation()*. It must return either *YES* or *NO*.
 
 
-**Input:**
+**Input:** two parameters - a: the String to modify, b: the String to match. String **a** consits only of uppercase and lowercase English letters, ascii [A-Za-z]. String **b** consists only of uppercase English letters, ascii[A-Z]
 
-**Output:**
+**Output:** String "YES" if it's possible to make string **a** equal to string **b**. Otherwise, print "NO" 
+
+**Sample Input:** abbreviation("daBcd", "ABC")
+**Output:** "YES"
 </br></br>
 
 ### 4) Pangram
