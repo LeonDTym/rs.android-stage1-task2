@@ -17,7 +17,7 @@
 
 Если вы пришли к выводу, что выполнили максимум того что могли сделать, то сделайте Submit задачи через 
 https://app.rs.school/
-
+</br></br>
 
 ## Условия задач
 
@@ -68,28 +68,64 @@ You can perform the following operations on the string **a**
 1. Capitalize zero or more of **a**'s lowercase letters.
 2. Delete all of the remaining lowercase letters in **a**.
 
-Given two strings, **a** and **b**, determine if it's possible to make **a** equal to **b** as described. If so, print *YES* on a new line. Otherwise, print *NO*.
+Given two strings, **a** and **b**, determine if it's possible to make **a** equal to **b** as described. If so, print *"YES"* on a new line. Otherwise, print *"NO"*.
 
-For example, given **a = AbcDE** and **b = ABDE**, in **a** we can convert **b** and delete **c** to match **b**. If **a = AbcDE** and **b = AFDE**, matching is not possible because letters may only be capitalized or discarded, not changed.
+For example, given **a = AbcDE** and **b = ABDE**, in **a** we can convert *"b"* and delete *"c"* to match **b**. If **a = AbcDE** and **b = AFDE**, matching is not possible because letters may only be capitalized or discarded, not changed.
 
 **Function Description**
 
 Complete the function *abbreviation()*. It must return either *YES* or *NO*.
 
 
-**Input:** two parameters - a: the String to modify, b: the String to match. String **a** consits only of uppercase and lowercase English letters, ascii [A-Za-z]. String **b** consists only of uppercase English letters, ascii[A-Z]
+**Input:** two parameters - **a**: the String to modify, **b**: the String to match. String **a** consits only of uppercase and lowercase English letters, ascii[A-Za-z]. String **b** consists only of uppercase English letters, ascii[A-Z]
 
 **Output:** String "YES" if it's possible to make string **a** equal to string **b**. Otherwise, print "NO" 
 
 **Sample Input:** abbreviation("daBcd", "ABC")
+
 **Output:** "YES"
+
+<img alt="abbreviation" src="/images/img3.PNG" />
+
+We have **a = daBcd** and **b = ABC**. We perform the following operation:
+1. Capitalize the letters *"a"* and *"c"* in **a** so that **a = daBcd**
+2. Delete all the remaining lowercase letters in *a* so that **a = ABC**
+
+Because we were able to successfully convert **a** to **b**, we print *"YES"* .
 </br></br>
 
 ### 4) Pangram
 
-**Input:** 
+Pangram - a sentence that contains each letter of the alphabet at least one time.
 
-**Output:** 
+Pangram example: "Farmer jack realized that big yellow quilts were expensive".
+
+Сonvert method should transform string according to the following rules:
+
+1) if the given string is pangram:
+
+- all words of a given string should be sorted by count of vowels; notes: (vowels: a,e,i,o,u,y), (words: all substrings of a given string separated by space), words shouldn't have 0 lengths, a word may contain a punctuation character ("someWord," or even ",").
+- all vowels should be capitalized (no need to change letters that are already capitalized)
+- each word should begin with a count of vowels (before: name, after: 2name)
+</br></br>
+
+2) if the given string is not pangram:
+
+- all words of a given string should be sorted by count of consonants; notes: (consonants: all letters of English alphabet excluding vowels), (words: all substrings of a given string separated by space), words shouldn't have 0 lengths, a word may contain a punctuation character ("someWord," or even ",").
+- all consonants should be capitalized (no need to change letters that are already capitalized)
+- each word should begin with a count of consonants (before: name, after: 2name) newline characters should be replaced with spaces
+</br></br>
+
+**Example:** 
+pangrams "The five boxing wizards jump quickly." should return "1ThE 1jUmp 2fIvE 2bOxIng 2wIzArds 3qUIcklY."
+
+"A mad boxer shot a quick, gloved jab to the jaw of his dizzy opponent." should return "1A 1mAd 1shOt 1A 1jAb 1tO 1thE 1jAw 1Of 1hIs 2bOxEr 2qUIck, 2glOvEd 2dIzzY 3OppOnEnt."
+
+no pangrams "Even the most complicated sentences start with a simple structure." should return "0a 2EVeN 2THe 3MoST 3WiTH 4STaRT 4SiMPLe 6SeNTeNCeS 6STRuCTuRe. 7CoMPLiCaTeD"
+
+**Input:** pangram or not-pangram String
+
+**Output:** result String according to description (see above)
 </br></br>
 
 ### 5) Blocks
