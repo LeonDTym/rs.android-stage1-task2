@@ -130,17 +130,69 @@ no pangrams "Even the most complicated sentences start with a simple structure."
 
 ### 5) Blocks
 
+Робот Пафнутий узнал про блоки. И теперь он отказывается работать как-то по другому.
 
-**Input:**
+Помоги Пафнутию выполнить простейшие операции с разными типами объектов.
 
-**Output:** 
+blockA — принимает данные. В блок передается массив разных объектов. Числа, строки, даты. Массив без данных Пафнутий не принимает.
+
+blockB — принимает данные. В блок передается класс объекта, с которым нужно работать.
+
+blockC — возвращает данные на основе тех, которые были получены в блоках A и B.
+
+В зависимости от принимаемого массива в блоке A и класса в блоке B в блок C возвращается:
+1. Для чисел — сумма всех чисел
+2. Для строк — конкатенация всех строк
+3. Для дат — самая позняя (т.е. ближайшая к текущему дню) дата в виде строки в формате dd.MM.yyyy
+
+blockC вызывается, когда у Пафнутия хватает данных для вычисления
+
+Пример:
+- В blockA передаем массив [1, "4", 2, "3"]
+- В blockB передаем класс String
+- В blockC возвращает "43", так как из массива в блоке А берутся элементы типа String (из блока B) - "4" и "3" - и происходит их конкатенация
+
+**Input:** 
+- blockA - cписок с объектами Array<Any>. Тип объектов может быть String, Int или LocalDate
+- blockB - тип объекта KClass<*>
+  
+**Output:** blockC: Any - результат, согласно условиям описанным выше
 </br></br>
 
 
 ### 6) Fibonacci
 
-**Input:**
+The Fibonacci numbers are the numbers in the following integer sequence (Fn):
 
-**Output:** 
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, ...
+
+such as
+
+F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+
+Given a number, say product, we search two Fibonacci numbers
+
+F(n) and F(n+1) verifying
+
+F(n) * F(n+1) = prod.
+
+Your function productFib takes an NSNumber (prod) and returns an array of Int:
+
+[F(n), F(n+1), (0 or 1))]
+
+1 if F(n) * F(n+1) = prod and 0 if F(n) * F(n+1) is not equal to prod
+
+Example:
+productFibonacciSequenceFor(15) - should return (3, 5, 1)
+
+since F(4) = 3, F(5) = 5 and 15 = 3 * 5
+
+productFibonacciSequenceFor(30) should return (5, 8, 0),
+
+since F(4) = 3, F(5) = 5, F(6) = 8 and 3 * 5 < 30 < 5 * 8
+
+**Input:** n: Int
+
+**Output:** array: IntArray - according to task description (see above)
 </br></br>
 :ok_hand:
