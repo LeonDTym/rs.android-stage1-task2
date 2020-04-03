@@ -2,7 +2,7 @@ import org.junit.Assert.assertEquals
 import org.junit.Test
 import subtask1.DateFormatter
 
-class DateFormatterTest {
+class Task2DateFormatterTest {
 
     private val formatter = DateFormatter()
 
