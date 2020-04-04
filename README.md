@@ -106,14 +106,14 @@ Pangram example: "Farmer jack realized that big yellow quilts were expensive".
 
 - all words of a given string should be sorted by count of vowels; notes: (vowels: a,e,i,o,u,y), (words: all substrings of a given string separated by space), words shouldn't have 0 lengths, a word may contain a punctuation character ("someWord," or even ",").
 - all vowels should be capitalized (no need to change letters that are already capitalized)
-- each word should begin with a count of vowels (before: name, after: 2name)
+- each word should begin with a count of vowels (before: name, after: 2nAmE)
 </br></br>
 
 2) if the given string is not pangram:
 
 - all words of a given string should be sorted by count of consonants; notes: (consonants: all letters of English alphabet excluding vowels), (words: all substrings of a given string separated by space), words shouldn't have 0 lengths, a word may contain a punctuation character ("someWord," or even ",").
 - all consonants should be capitalized (no need to change letters that are already capitalized)
-- each word should begin with a count of consonants (before: name, after: 2name) newline characters should be replaced with spaces
+- each word should begin with a count of consonants (before: name, after: 2NaMe) newline characters should be replaced with spaces
 </br></br>
 
 **Example:** 
@@ -153,7 +153,7 @@ blockC вызывается, когда у Пафнутия хватает да�
 - В blockC возвращает "43", так как из массива в блоке А берутся элементы типа String (из блока B) - "4" и "3" - и происходит их конкатенация
 
 **Input:** 
-- blockA - cписок с объектами Array<Any>. Тип объектов может быть String, Int или LocalDate
+- blockA - cписок с объектами Array<<Any>>. Тип объектов может быть String, Int или LocalDate
 - blockB - тип объекта KClass<*>
   
 **Output:** blockC: Any - результат, согласно условиям описанным выше
