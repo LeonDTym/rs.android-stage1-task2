@@ -30,7 +30,7 @@ class Task2BlocksTest {
             1984
         )
         val result =
-            "Sing, O goddess, the anger of Achilles son of Peleus, that brought countless ills upon the Achaeans.  " +
+            "Sing, O goddess, the anger of Achilles son of Peleus, that brought countless ills upon the Achaeans. " +
                     "Many a brave soul did it send hurrying down to Hades, and many a hero did it yield a prey to dogs and vultures..."
 
         assertEquals(result, robotPaphnutiy.getData(blockA, String::class))
